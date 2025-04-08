@@ -1,0 +1,30 @@
+[package]
+name = "turn-off-macos-agent-or-daemon"
+version = "0.0.1"
+edition = "2024"
+autoexamples = false
+autobenches = false
+
+[package.metadata]
+cargo-args = ["-Zmtime-on-use", "-Zavoid-dev-deps", "-Zcustom_mir"]
+
+
+[lib]
+name = "toma"
+path = "toma/lib.rs"
+
+doctest = false
+bench = false
+
+
+[[bin]]
+name = "toma"
+path = "./toma.rs"
+doctest = false
+bench = false
+doc = false
+
+[dependencies]
+clap = { version = "4.5.35", features = ["derive", "env", "string", "unicode", "wrap_help"] }
+iocore = "2.0.0"
+serde = { version = "1.0.219", features = ["derive"] }
