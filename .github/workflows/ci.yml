@@ -45,5 +45,8 @@ jobs:
           command: install
           args: --path .
 
-      - name: run
+      - name: run (non-root)
+        run: toma
+
+      - name: run (root)
         run: sudo toma
