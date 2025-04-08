@@ -17,6 +17,7 @@ jobs:
           - nightly
           - beta
           - stable
+
     name: Check, Build and Run
     runs-on: macos-latest
     steps:
