@@ -1,5 +1,4 @@
 use clap::Parser;
-use iocore::User;
 use toma::{turn_off, Error, Uid};
 
 #[derive(Parser, Debug)]
@@ -29,10 +28,6 @@ impl Cli {
     }
 }
 fn main() {
-    let user = User::id().unwrap();
-    if user.name() != "root" && user.uid() != 0 {
-        panic!("must run as root");
-    }
     let args = Cli::parse();
     let (success, errors) = args.turn_off();
     if success.len() > 0 {

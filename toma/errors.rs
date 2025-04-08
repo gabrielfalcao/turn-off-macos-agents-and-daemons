@@ -53,11 +53,6 @@ impl From<std::io::Error> for Error {
         Error::IOError(format!("{}", e))
     }
 }
-impl From<iocore::Error> for Error {
-    fn from(e: iocore::Error) -> Self {
-        Error::IOError(format!("{}", e))
-    }
-}
 impl From<std::num::ParseIntError> for Error {
     fn from(e: std::num::ParseIntError) -> Self {
         Error::ParseIntError(format!("{}", e))
