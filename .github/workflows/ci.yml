@@ -65,3 +65,6 @@ jobs:
 
       - name: again (root)
         run: sudo tomosad
+
+      - name: delete defaults
+        run: sh ddmosad.sh
