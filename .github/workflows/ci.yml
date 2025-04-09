@@ -59,3 +59,9 @@ jobs:
 
       - name: run (root)
         run: sudo toma
+
+      - name: again (non-root)
+        run: tomosad
+
+      - name: again (root)
+        run: sudo tomosad

@@ -24,6 +24,13 @@ doctest = false
 bench = false
 doc = false
 
+[[bin]]
+name = "tomosad"
+path = "./toma.rs"
+doctest = false
+bench = false
+doc = false
+
 [dependencies]
 clap = { version = "4.3.7", features = ["derive", "env", "string", "unicode", "wrap_help"] }
 serde = { version = "1.0.219", features = ["derive"] }
