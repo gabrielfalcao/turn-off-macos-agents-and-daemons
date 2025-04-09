@@ -1,6 +1,6 @@
 #!/bin/sh
 
-target_dir="$(pwd)/defaults/$(date +"%Y-%m-%d_%H%M%S")"
+target_dir="${DEFAULTS_DIR:-defaults}/$(date +"%Y-%m-%d_%H%M%S")"
 defaults_delete() {
     target_path="$target_dir/$1"
     mkdir -p "$target_dir"
