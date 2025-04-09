@@ -71,7 +71,7 @@ jobs:
           DEFAULTS_DIR: "defaults-${{ matrix.toolchain }}"
         run: sh ddmosad.sh
 
-      - name: upload target artifacts
+      - name: upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: "defaults-${{ matrix.toolchain }}"
