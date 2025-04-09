@@ -19,14 +19,14 @@ bench = false
 
 [[bin]]
 name = "toma"
-path = "./toma.rs"
+path = "./tomosad.rs"
 doctest = false
 bench = false
 doc = false
 
 [[bin]]
 name = "tomosad"
-path = "./toma.rs"
+path = "./tomosad.rs"
 doctest = false
 bench = false
 doc = false
