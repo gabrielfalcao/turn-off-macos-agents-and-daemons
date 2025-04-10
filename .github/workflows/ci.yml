@@ -47,7 +47,6 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: build
-
       - name: install
         uses: actions-rs/cargo@v1
         with:
@@ -76,3 +75,9 @@ jobs:
         with:
           name: "defaults-${{ matrix.toolchain }}"
           path: "defaults-${{ matrix.toolchain }}"
+
+      - name: uname -a
+        run: uname -a
+
+      - name: rustup show
+        run: rustup show
