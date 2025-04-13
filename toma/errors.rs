@@ -28,9 +28,9 @@ impl Display for Error {
             "{}: {}",
             self.variant(),
             match self {
-                Self::IOError(s) => format!("{}", s),
-                Self::LaunchdError(s) => format!("{}", s),
-                Self::ParseIntError(s) => format!("{}", s),
+                Self::IOError(e) => e.to_string()
+                Self::LaunchdError(e) => e.to_string()
+                Self::ParseIntError(e) => e.to_string()
             }
         )
     }

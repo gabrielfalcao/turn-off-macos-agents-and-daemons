@@ -1,5 +1,5 @@
 [package]
-name = "turn-off-macos-agent-and-daemon"
+name = "turn-off-macos-agents-and-daemons"
 version = "0.1.0"
 edition = "2018"
 autoexamples = false
@@ -15,14 +15,7 @@ bench = false
 
 [[bin]]
 name = "toma"
-path = "./tomosad.rs"
-doctest = false
-bench = false
-doc = false
-
-[[bin]]
-name = "tomosad"
-path = "./tomosad.rs"
+path = "./toma.rs"
 doctest = false
 bench = false
 doc = false
